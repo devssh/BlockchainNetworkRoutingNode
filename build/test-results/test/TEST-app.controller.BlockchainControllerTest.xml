@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.controller.BlockchainControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-31T06:45:28" hostname="IND-CHN-Devashish-Sood.local" time="0.001">
+  <properties/>
+  <testcase name="testSample" classname="app.controller.BlockchainControllerTest" time="0.001"/>
+  <system-out><![CDATA[hi
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

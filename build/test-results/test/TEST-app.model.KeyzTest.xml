@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.model.KeyzTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-05-31T06:45:28" hostname="IND-CHN-Devashish-Sood.local" time="0.461">
+  <properties/>
+  <testcase name="shouldReturnDeterministicKeys" classname="app.model.KeyzTest" time="0.433"/>
+  <testcase name="shouldMaintainIntegrityOfBlockchainKeysWRTSeed" classname="app.model.KeyzTest" time="0.01"/>
+  <testcase name="shouldReturnSameSeed" classname="app.model.KeyzTest" time="0.0"/>
+  <testcase name="shouldGenerateSeedAndKeysOfProperLengthAndRandomness" classname="app.model.KeyzTest" time="0.018"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'org.springframework.boot', name: 'spring-boot-gradle-plugin', version: '2.0.1.RELEASE'
+    }
+}
+
+group 'com.tw.fullnodeapi'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'FullNode-api'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ["test/main/java"]
+        }
+    }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
+    compile group: 'de.brendamour', name: 'jpasskit', version: '0.0.8'
+    compileOnly group: 'javax', name: 'javaee-api', version: '6.0'
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '1.4.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.1.RELEASE'
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile("javax.xml.bind:jaxb-api:2.3.0")
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jetty', version: '2.0.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.0.1.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.59'
+
+
+}
